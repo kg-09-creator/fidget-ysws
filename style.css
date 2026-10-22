@@ -1,0 +1,110 @@
+.RSVP {
+    background-color: rgb(235, 68, 68);
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;   
+    font-family: monospace;
+}
+
+
+
+.RSVP:hover {
+    background-color: red;
+    padding: 15px;
+}
+
+.header {
+    display:flex;
+    flex-direction: column;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+:root {
+  --primary-color: #ec3750; 
+  --bg-color: #ffffff;
+  --text-color: #1f2d3d;
+}
+
+/*body {
+  font-family: monospace; 
+  background-color: #f9fafb;
+  padding: 40px;
+}*/
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-box {
+  background: var(--bg-color);
+  border: 3px solid var(--text-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0px var(--text-color); 
+  transition: transform 0.1s ease;
+}
+
+.faq-box summary {
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-box summary::after {
+  content: "[+]";
+  color: var(--primary-color);
+  font-family: monospace;
+}
+
+.faq-box[open] {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--text-color);
+}
+
+.faq-box[open] summary {
+  border-bottom: 3px solid var(--text-color);
+  background-color: rgba(236, 55, 80, 0.1); 
+}
+
+.faq-box[open] summary::after {
+  content: "[-]";
+}
+
+.faq-content {
+  padding: 16px;
+  line-height: 1.5;
+  background: #fff;
+}
+
+.orphy-flag {
+    margin-right: 1260px;
+    display: flex;
+    align-items: left;
+    position: fixed;
+    width: 250px;
+}
+
+.footer {
+    background-color: #ec3750;
+    color: white;
+   
+}
+
+.text {
+    color: white;
+}
